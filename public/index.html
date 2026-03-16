@@ -6,66 +6,53 @@
     <link rel="icon" type="image/x-icon" href="/Images/bop.gif">
     <title>Kopise</title>
     <style>
-      img {
-        width:600px;
-        border-radius:150px;
-        padding-bottom: 25px;
-      }
-      html {
-        cursor: url('Images/Cursor1.png'), auto;
-      }
-      div {
-        width:1500px;
-        margin:auto;
-        border: 2px solid #9F2B68;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
+      body {
+        font-family: 'Courier New', monospace;
+        background-color: #FDF6E3;
+        background-image: radial-gradient(#dda0d2 1px, transparent 1px);
+        background-size: 25px 25px
       }
 
-      /* The sidenav */
-      .sidenav {
-        height: 25%;
-        width: 100px;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        background-color: #333;
-        overflow-x: hidden;
-        padding-top: 20px;
+      img {
+        display: block;
+        margin: auto;
       }
+
+      .container { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+    .image-hover {
+      background-image: url('Images/cutecat.jpg');
+      background-size: cover;
+      height: 200px;
+      width: 400px;
+      transition: background-image 0.5s ease-in-out;
+    }
+
+    .image-hover:hover {
+      background-image: url('Images/Kirby.gif');
+    }
 
     </style>
   </head>
-  <body style="background-color:#1e1d1d;">
+  <body>
+    <div class="container">
+      <div id="hover" class="image-hover"></div>
+    </div>
   
-  <div class="sidenav" style="background-color:#1e1d1d;">>
+  <!-- <div class="sidenav" style="background-color:#1e1d1d;">>
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
     <a href="questions.html">Questions</a>
     <a href="about.html">About</a>
-  </div>
+  </div> -->
     
     
-  <div>
-  <center>
-    <h1 style="color:#FFFFFF;">heya :3</h1>
-    </center>
-    <br>
-    <br>
-    <a href="https://youtu.be/QN7ME5tqBsk?si=4hfSfZcN5zW5Y7l5">Kirby Running</a>
-    <p style="color:#FFFFFF;"> favicon gif only for my firefox enjoyers. GIF below for non firefox enjoyers</p>
-    <p style="color:#FFFFFF;"> i love kirby so much ;w;</p>
-  <center>
-    <img src="/Images/bop.gif">
-    <img src="/Images/favicon.png">
-  </center>
-  <p style="color:#FFFFFF;"> work in progress raa</p>
-  </div>
+
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </body>
 </html>
