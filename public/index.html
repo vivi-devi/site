@@ -10,49 +10,71 @@
         font-family: 'Courier New', monospace;
         background-color: #FDF6E3;
         background-image: radial-gradient(#dda0d2 1px, transparent 1px);
-        background-size: 25px 25px
+        background-size: 25px 25px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
 
       img {
         display: block;
-        margin: auto;
       }
 
-      .container { 
+      .art-banner { 
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
+        gap: 5px
       }
 
-    .image-hover {
-      background-image: url('Images/cutecat.jpg');
-      background-size: cover;
-      height: 200px;
-      width: 400px;
-      transition: background-image 0.5s ease-in-out;
-    }
+      .landing-page-content {
+        text-align: center;
+      }
 
-    .image-hover:hover {
-      background-image: url('Images/Kirby.gif');
-    }
+      .welcome {
+        margin: 2px 0;
+        line-height: 4;
+      }
+
+      .explore {
+        margin: 2px 0;
+        line-height: 2;
+        padding-top: 40px;
+      }
+
+      .nah::after {
+        content: "nah";
+      }
+
+      .nah:hover::after {
+        content: "ok loser...";
+      }
+
+      .yes-link {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      }
+
+      .yes-link:hover {
+        color: #d48ac7;
+      }
 
     </style>
   </head>
   <body>
-    <div class="container">
-      <div id="hover" class="image-hover"></div>
+    <div class="landing-page-content">
+      <p class="welcome"> hiya! ♡ </p>
+      <div class="art-banner">
+        <img src="Images/kitty.png">
+        <img src="Images/heart.gif">
+        <img src="Images/bunny.png" alt="bunny">
+      </div>
+      <p class="welcome"> welcome to kopise </p>
+      <p class="explore"> would you like to explore? <br>
+      <a href="home.html" class="yes-link">yea!</a> | <span class="nah"></span></p>
     </div>
-  
-  <!-- <div class="sidenav" style="background-color:#1e1d1d;">>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="questions.html">Questions</a>
-    <a href="about.html">About</a>
-  </div> -->
-    
-    
-
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </body>
 </html>
