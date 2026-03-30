@@ -1,9 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Oops</title>
+  <title>Home</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #FDF6E3;
+      background-image: radial-gradient(#dda0d2 1px, transparent 1px);
+      background-size: 25px 25px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .canvas {
+      width: 500px;
+      height: 550px;
+      background: white;
+      border-radius: 12px;
+      position: relative; /* IMPORTANT */
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .note {
+      position: absolute;
+
+      width: 180px;
+      height: 180px;
+
+      background: #fff4b8;
+      padding: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+      transform: rotate(-5deg);
+    }
+
+    .note1 {
+      border-radius: 50%;
+      top: -35px;
+      left: -55px;
+      transform: rotate(-10deg);
+    }
+
+    .note2 {
+      background: #f0fbfb;
+      bottom: -60px;
+      right: -70px;
+      height: 120px;
+      width: 300px;
+
+      transform: rotate(0deg);
+      border-radius: 16px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 12px;
+
+      height: 100%;
+
+      padding: 60px 20px 20px 20px;
+
+      grid-template-rows: auto 1fr;
+      grid-template-columns: 1fr 0.5fr; 
+    }
+
+    .box {
+      position: absolute;
+
+      background: #fcfbf6;
+      border-radius: 12px;
+      padding: 10px;
+
+      border: 1px dashed #000000;
+      border-radius: 16px;
+    }
+
+    .top {
+      top: 25px;
+      right: 18px;
+
+      width: 55%;
+      height: 140px;
+    }
+
+    .left {
+      bottom: 15px;
+      left: 18px;
+
+      width: 50%;
+      height: 300px;
+      text-align: center;
+    }
+
+    .right {
+      bottom: 70px;
+      right: 18px;
+
+      width: 30%;
+      height: 245px;
+      text-align: center;
+    }
+
+    .link {
+      display: block;    
+      text-decoration: none;
+      color: inherit;
+    }
+
+  </style>
 </head>
 <body>
-  <h1>oops... still a wip ♡</h1>
+  <div class="canvas">
+    <div class="grid">
+      <div class="box top">
+        <p> welcome to my little space in the web! <br><br>it's still a biiig work in progress but I hope you enjoy your stay !
+        </p>
+
+      </div>
+      <div class="box left"> 
+        <h3>
+          content
+        </h3>
+        <br>
+        <a href="about.html" class="link">
+          about me <br><br><br>
+        </a>
+        <a href="foto-album.html" class="link">
+          foto album <br><br><br>
+        </a>
+        <a href="matcha-boba.html" class="link">
+          matcha/boba blog <br><br><br>
+        </a>
+        <a href="thoughts.html" class="link">
+          thoughts (?) <br><br>
+        </a>
+
+      </div>
+      <div class="box right">
+        <h3>
+          future
+        </h3>
+        <br>
+        <p> fill out home page with more pixel art !! </p>
+      </div>
+    </div>
+    <div class="note note1"> recent happies !! <br><br> tx trip planned !<br> bought vlog cam !<br> 
+      
+    </div>
+    <div class="note note2">current song obsessions <br><br> satellite - starset <br> longlegs - grim salvo <br> u're like the sun - abbie ozard
+
+    </div>
+  </div>
 </body>
 </html>
