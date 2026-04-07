@@ -16,6 +16,7 @@
     }
 
     .canvas {
+      z-index: 1;
       width: 500px;
       height: 550px;
       background: white;
@@ -30,7 +31,7 @@
       width: 180px;
       height: 180px;
 
-      background: #fff4b8;
+      background: #fbfeae;
       padding: 20px;
 
       display: flex;
@@ -116,10 +117,41 @@
       color: inherit;
     }
 
+    .pxart {
+      display: block;
+      position: absolute;
+      z-index: 10;
+    }
+
+    .blossom {
+      margin-top: -170px;
+      margin-left: -60px;
+    }
+
+    .blossom1 {
+      margin-top: -80px;
+      margin-left: 360px;
+      transform: scaleX(-1);
+    }
+
+    .sun {
+      margin-top: -95px;
+      margin-left: -120px;
+    }
+    
   </style>
 </head>
 <body>
   <div class="canvas">
+
+    <div class="pxart blossom1">
+    <img src="Images/blossom.png" alt="blossom">
+    </div>
+
+    <div class="pxart sun">
+      <img src="Images/ray.png">
+    </div>
+
     <div class="grid">
       <div class="box top">
         <p> welcome to my little space in the web! <br><br>it's still a biiig work in progress but I hope you enjoy your stay !
@@ -153,12 +185,23 @@
         <p> fill out home page with more pixel art !! </p>
       </div>
     </div>
-    <div class="note note1"> recent happies !! <br><br> tx trip planned !<br> bought vlog cam !<br> 
-      
-    </div>
-    <div class="note note2">current song obsessions <br><br> satellite - starset <br> longlegs - grim salvo <br> u're like the sun - abbie ozard
 
+    <div class="note note1"> 
+      recent happies !! <br><br> tx trip planned !<br> bought vlog cam !<br> 
     </div>
+
+
+    <div class="note note2">
+      current song obsessions <br><br> satellite - starset <br> longlegs - grim salvo <br> u're like the sun - abbie ozard
+    </div>
+
+    <div class="pxart blossom">
+    <img src="Images/blossom.png" alt="blossom">
+    </div>
+
+    <!-- <div class="pedro">
+      <img src="Images/Pedro.gif">
+    </div> -->
   </div>
 </body>
 </html>
