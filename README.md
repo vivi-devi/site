@@ -1,1 +1,1 @@
-Neocities link to Github with Vscode to make it easier to code.
+neocities website, deploys to neocities when pushed.
